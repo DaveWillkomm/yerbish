@@ -1,5 +1,4 @@
-# Yerb [![Build Status](https://travis-ci.org/dinosaurjr10/yerb.svg?branch=master)](http://travis-ci.org/dinosaurjr10/yerb)
-
+# Yerb [![Build Status](https://travis-ci.org/dinosaurjr10/yerb.svg?branch=master)](http://travis-ci.org/dinosaurjr10/yerb) [![Coverage Status](https://img.shields.io/coveralls/dinosaurjr10/yerb.svg)](https://coveralls.io/r/dinosaurjr10/yerb?branch=master)
 YAML with embedded Ruby
 
 ## Installation
