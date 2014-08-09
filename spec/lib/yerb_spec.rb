@@ -76,10 +76,12 @@ describe Yerb do
       JSON.parse json
     end
 
+    before { described_class.base_path = File.expand_path '../resources', __dir__ }
+
     it 'should render three nested files' do
       expect(subject['key1']).to eq 'test-local-variable-value'
       expect(subject['key2']).to eq 'test-local-variable2-value'
-      expect(subject['key3']).to eq File.expand_path('../resources/subdirectory', __dir__)
+      expect(subject['key3']).to eq File.expand_path('../resources', __dir__)
     end
   end
 end

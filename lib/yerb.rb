@@ -27,10 +27,9 @@ module Yerb
   def render(file_path, local_variables = {})
     absolute_path = File.expand_path file_path, base_path
     absolute_path += FILE_EXTENSION unless absolute_path.end_with?(FILE_EXTENSION)
-    directory = File.dirname absolute_path
     file_content = File.read absolute_path
     erb = ERB.new file_content
-    erb.result create_binding(directory, local_variables)
+    erb.result create_binding(base_path, local_variables)
   end
 
   # Interprets the specified file's embedded Ruby, parsing the result as YAML and returning it formatted as JSON.
