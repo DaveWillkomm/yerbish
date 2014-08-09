@@ -1,16 +1,16 @@
 require 'erb'
 require 'json'
 require 'yaml'
-require 'yerb/version'
+require 'yerbish/version'
 
-module Yerb
+module Yerbish
   FILE_EXTENSION = '.yml.erb'
 
   attr_accessor :base_path
 
   def create_binding(base_path, local_variables = {})
     b = TOPLEVEL_BINDING.dup
-    b.eval 'include Yerb'
+    b.eval 'include Yerbish'
     local_variables.each { |k,v| b.local_variable_set k, v }
     b.eval "self.base_path = '#{base_path}'"
     b

@@ -1,3 +1,3 @@
-module Yerb
+module Yerbish
   VERSION = "0.0.1"
 end
