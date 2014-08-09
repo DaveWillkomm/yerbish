@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Yerb::VERSION
   spec.authors       = ['Dave Willkomm']
   spec.email         = ['dinosaurjr10@gmail.com']
-  spec.summary       = %q{YAML with embedded Ruby}
-  spec.description   = spec.summary
+  spec.summary       = 'YAML with embedded Ruby'
+  spec.description   = 'Yerb enables embedding Ruby in YAML files, as well as composing a YAML file from other partial YAML files.'
   spec.homepage      = 'https://github.com/dinosaurjr10/yerb'
   spec.license       = 'MIT'
 
@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'coveralls'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'bundler', '~> 1.6'
+  spec.add_development_dependency 'coveralls', '~> 0.7'
+  spec.add_development_dependency 'rake', '~> 10.3'
+  spec.add_development_dependency 'rspec', '~> 3.0'
 end
