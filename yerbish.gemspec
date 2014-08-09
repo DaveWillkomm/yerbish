@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'yerb/version'
+require 'yerbish/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'yerb'
-  spec.version       = Yerb::VERSION
+  spec.name          = 'yerbish'
+  spec.version       = Yerbish::VERSION
   spec.authors       = ['Dave Willkomm']
   spec.email         = ['dinosaurjr10@gmail.com']
   spec.summary       = 'YAML with embedded Ruby'
-  spec.description   = 'Yerb enables embedding Ruby in YAML files, as well as composing a YAML file from other partial YAML files.'
-  spec.homepage      = 'https://github.com/dinosaurjr10/yerb'
+  spec.description   = 'Yerbish enables embedding Ruby in YAML files, as well as composing a YAML file from other partial YAML files.'
+  spec.homepage      = 'https://github.com/dinosaurjr10/yerbish'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

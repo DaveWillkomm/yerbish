@@ -1,13 +1,13 @@
 require 'spec_helper'
-require 'yerb'
+require 'yerbish'
 
-describe Yerb do
+describe Yerbish do
   let(:test_local_variables) { { test_local_variable: 'test-local-variable-value' } }
 
   describe '#create_binding' do
     subject { described_class.create_binding 'test-base-path', test_local_variable: 'test-local-variable-value' }
 
-    it 'should mix in Yerb' do
+    it 'should mix in Yerbish' do
       expect(subject.eval 'self.private_methods').to include :base_path
       expect(subject.eval 'self.private_methods').to include :base_path=
       expect(subject.eval 'self.private_methods').to include :create_binding
